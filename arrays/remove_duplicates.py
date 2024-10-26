@@ -36,3 +36,6 @@ def rem_dup(arr):
 
 arr = [1,1,2,2,2,3,3]
 print(rem_dup(arr))
+
+# TC - O(n)
+# SC - O(1)
