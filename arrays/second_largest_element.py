@@ -23,3 +23,45 @@ def sec_largest(arr):
 arr = [1,1,2,2,3,4,4,4]
 print(sec_largest(arr))    
 
+
+
+# Better solution
+    # first pass largest and then comparing each values weather it is greater than smallest and less than largest
+    # smallest = -inf
+
+
+
+def sec_largest(arr):
+    largest = 0
+    for i in arr:
+        if i > largest:
+            largest = i
+
+    slargest = 0
+    for i in arr:
+        if i > slargest and i!=largest:
+            slargest = i
+    return slargest
+
+arr = [1,1,2,2,3,4,4,4]
+print(sec_largest(arr))   
+
+# TC O(n+n)
+# SC O(1)
+
+
+# Optimal solution
+
+def sec_largest(arr):
+    largest = 0
+    slargest = 0
+
+    for i in arr:
+        if i > largest:
+            slargest = largest 
+            largest = i
+
+    return slargest
+
+arr = [1,1,2,2,3,4,4,4]
+print(sec_largest(arr))   
