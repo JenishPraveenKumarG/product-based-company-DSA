@@ -1,3 +1,5 @@
+# brute
+
 def left_rotate_D(arr,k):
     n = len(arr)
     k = k%n
@@ -18,4 +20,33 @@ def left_rotate_D(arr,k):
 arr = [1,2,3,4,5,6]
 k = 3
 print(left_rotate_D(arr,k))
+
+
+# TC - O(d) + O(n) + O(d)
+# SC - O(d)
+
+
+# Optimal solution
+
+def reverse(arr,l,r):
+    while l<r:
+        arr[l],arr[r] = arr[r],arr[l]
+        l+=1
+        r-=1
+    
+    return arr
+
+def left_rotate_D(arr,k):
+    n = len(arr)
+    reverse(arr,0,k-1)
+    reverse(arr,k,n-1)
+    reverse(arr,0,n-1)
+    return arr
+
+arr = [1,2,3,4,5,6]
+k = 3
+print(left_rotate_D(arr,k))
+
+# TC - O(d) + O(n-d) + O(n) = O(2n)
+# SC - O(1)
 
