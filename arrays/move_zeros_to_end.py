@@ -26,3 +26,35 @@ print(move_zeros(arr))
 
 # optimal solution
 
+def move_zeros(arr):
+    for i in arr:
+        if i == 0:
+            arr.remove(i)
+            arr.append(0)
+    return arr
+
+
+arr = [1,0,2,0,3,0,4,0]
+print(move_zeros(arr))
+
+# TC - O(n)
+# SC - O(1)
+
+# second optimal solution
+
+def move_zeros(arr):
+    n = len(arr)
+    r = 0  
+    
+    for l in range(n):
+        if arr[l] != 0:  
+            arr[l], arr[r] = arr[r], arr[l]
+            r += 1 
+
+    return arr
+
+arr = [1,0,2,0,3,0,4,0]
+print(move_zeros(arr))
+
+# TC - O(n)
+# SC - O(1)
