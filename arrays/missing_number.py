@@ -18,18 +18,16 @@ print(missingNumber(arr))
 # Better solution using hash array
 
 
+
 def missingNumber(a):
-    N = len(a)+1
-    hash = [0] * (N + 1)  # hash array
-
-    # storing the frequencies:
-    for i in range(N - 1):
-        hash[a[i]] += 1
-
-    # checking the frequencies for numbers 1 to N:
-    for i in range(1, N + 1):
-        if hash[i] == 0:
+    n = 5
+    hash = [0]*(n+1)
+    for i in a:
+        hash[i] = 1
+    for i in range(1,len(hash)):
+        if hash[i]== 0:
             return i
+    return 0
 
 arr = [1,3,4,5]
 print(missingNumber(arr))
@@ -53,3 +51,26 @@ print(missingNumber(arr))
 
 # TC - O(n)
 # SC - O(1)
+
+# optimised solution using xor
+
+
+def missingNumber(a):
+    n = len(a)
+    xor1 = 0
+    xor2 = 0
+
+    '''for i in range(1,n+2):
+      xor1 ^= i'''
+
+    for i in range(n):
+       xor2 ^= arr[i]
+       xor1 ^= i+1
+    
+    xor1 = xor1 ^ (n+1)
+    
+    return xor1 ^ xor2
+      
+
+arr = [1,3,4,5]
+print(missingNumber(arr))
