@@ -52,3 +52,6 @@ def max_sub_sum(arr):
 
 arr = [-2,-3,4,-1,-2,1,5,-3]
 print(max_sub_sum(arr))
+
+# TC - O(n)
+# SC - O(1)
