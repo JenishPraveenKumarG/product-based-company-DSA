@@ -1,0 +1,51 @@
+# when the number of positive and negative difeers
+
+# we switch to brute solution and that is the best solution for this problem
+
+def arrange_array(arr):
+    pos = []
+    neg = []
+    n = len(arr)
+
+    for i in range(n):
+        if arr[i] < 0:
+            neg.append(arr[i])
+        else:
+            pos.append(arr[i])
+    
+    n1 = len(pos)
+    n2 = len(neg)
+    print(pos)
+    print(neg)
+
+    if n1 < n2:
+        for i in range(n1):
+            arr[2*i] = pos[i]
+            arr[2*i + 1] = neg[i]
+
+        index = 2 * n1
+
+        for i in range(n1,n2):
+            arr[index] = neg[i]
+
+        return arr
+
+    else:
+        for i in range(n2):
+            arr[2*i] = pos[i]
+            arr[2*i + 1] = neg[i]
+
+        index = 2 * n2
+
+        for i in range(n2,n1):
+            arr[index] = pos[i]
+
+        return arr
+
+
+arr = [-3,-2,-1,1,0,10,-5,-6,-7]
+print(arrange_array(arr))
+
+
+# TC - O(n) + O(min(pos,neg)) + O(left over)
+# SC - O(2n)
