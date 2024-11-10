@@ -1,0 +1,9 @@
+Notes
+
+    1. Can be applied only on sorted arrays
+    2. Time complexity O(logn)
+    3. Recursive one
+    4. We trim down the search space
+    5. low = 0, high = n-1
+    6. mid = (low+high)//2
+    
