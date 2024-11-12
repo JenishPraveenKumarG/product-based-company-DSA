@@ -21,12 +21,10 @@ This repository contains solutions to DSA problems curated from **Striver's A2Z 
 
 The repository is organized into folders corresponding to the topics and subtopics in the A2Z DSA Sheet. Each folder contains the following:
 
-- **Problem Statement**: A description of the problem.
-- **Solution**: Optimized solutions in Python/C++/Java.
+- **Problem Name**: A description of the problem.
+- **Solution**: From Brute to Optimised solutions in Python.
 - **Explanation**: Comments and explanations to help understand the approach.
   
-Example folder structure:
-
 
 ## Topics Covered
 
