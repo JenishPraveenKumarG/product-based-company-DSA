@@ -1,0 +1,12 @@
+In array elements will be stored contegueously whereas in linkedlist it wont be stored contegueously
+
+that is the main difference between array and linkedlist
+
+And then we can change the length of the linkedlist
+in languages like java and c++ we will declare the size first and we cant modify it.
+
+in linkedlist we have starting point as head
+and the next element will be pointed via next
+
+we will stop when next is null and the point is called as tail
+

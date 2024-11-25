@@ -1,0 +1,3 @@
+doubly linked list has both next and previous 
+we can move forward and backward easily
+this is the main advantahe of doubly linkedlist
