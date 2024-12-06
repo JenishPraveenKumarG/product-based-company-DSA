@@ -1,0 +1,30 @@
+def f(i,arr,s,sum):
+    if s > sum:
+        return 0
+    if i == len(arr):
+        # condition satisfied
+        if s == sum:
+            return 1
+        else:
+            # condition not satisfied
+            return 0
+    
+    
+    s+=arr[i]
+
+    l = f(i+1,arr,s,sum)
+        
+    s-=arr[i]
+
+    r = f(i+1,arr,s,sum)
+
+    
+    return l+r
+
+
+
+arr = [1,2,1]
+sum = 2
+i = 0
+s = 0
+print(f(i,arr,s,sum))
