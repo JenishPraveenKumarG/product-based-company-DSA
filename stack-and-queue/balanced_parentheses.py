@@ -17,5 +17,6 @@ def check(s):
 s = "()[{}()]"
 print(check(s))
 
+
 # TC - O(n)
 # SC - O(n)
