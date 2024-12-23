@@ -1,4 +1,4 @@
-# brute solution
+# brute force solution
 
 def palindrome(string):
     # reverse the string 
