@@ -1,3 +1,4 @@
+# brute force solution 
 def remove_k_digits(digits,k):
     stack = []
     for i in digits:
