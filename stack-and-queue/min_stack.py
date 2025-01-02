@@ -1,4 +1,5 @@
 class Stack:
+    
     def __init__(self):
         self.stack = []
         self.min = float('inf')
