@@ -20,7 +20,7 @@ print(print_count(arr))
 # Sc - O(n) - worst case where everything is unique
 
 
-# optimization
+# optimal solution 
 
 def print_count(arr,k):
     ''' find the number of subarrays <= k'''
