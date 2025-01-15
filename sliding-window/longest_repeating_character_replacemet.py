@@ -1,3 +1,4 @@
+#Brute solution
 def longest(s,k):
     n = len(s)
     maxLen = 0
