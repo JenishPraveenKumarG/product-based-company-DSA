@@ -1,0 +1,20 @@
+Binary Tree
+    - hierarchical data structure - tree shaped data structure where at most each node as 2 children
+
+
+Full Binary tree
+    - every node has 2 or 0 children
+
+Complete Binary Tree
+    - every level is filled completely except the last level   
+    - In last level it must be filled from left to right
+
+Perfect Binary Tree 
+    - each level must be filled completely
+
+balanced Binary tree
+    - height of the binary tree must be log2n maximum
+
+degenarate tree
+    - node are arranged in single path
+
